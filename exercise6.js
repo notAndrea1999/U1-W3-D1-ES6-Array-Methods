@@ -242,7 +242,7 @@ console.log(funzione2(movies));
 console.log("------Esercizio 12------");
 
 const funzione4 = function (movies) {
-  return movies.filter((movies) => movies.Year > 1999);
+  return movies.filter((movies) => parseInt(movies.Year) > 1999);
 };
 console.log(funzione4(movies));
 
