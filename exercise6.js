@@ -251,12 +251,14 @@ console.log(funzione4(movies));
 */
 console.log("------Esercizio 13------");
 
-// const funzione5 = function (movies) {
-//   let total = 0;
-//   total = movies.reduce((n3, n4) => n3 + n4, total);
-//   return total;
-// };
-// console.log(total);
+const summedYears = movies.reduce((accumulator, currentElement) => {
+  // console.log("Accumulator", acc);
+  // console.log("Current", curr);
+
+  return accumulator + parseInt(currentElement.Year);
+}, 0);
+
+console.log(summedYears);
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
